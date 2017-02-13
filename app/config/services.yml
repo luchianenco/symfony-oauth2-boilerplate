@@ -1,0 +1,9 @@
+services:
+
+    facebook_user_factory:
+        class: AppBundle\Factory\FacebookUserFactory
+        autowire: true
+
+    facebook_authenticator:
+        class: AppBundle\Authenticator\FacebookAuthenticator
+        autowire: true

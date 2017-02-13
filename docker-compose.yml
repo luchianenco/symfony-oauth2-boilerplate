@@ -1,0 +1,38 @@
+app:
+  build: ./docker
+  container_name: symfony-oauth2-app
+  ports:
+    - 8000:80
+  volumes:
+    - .:/app
+  links:
+    - mysql
+    - phpmyadmin
+  environment:
+    - RELATIVE_APP_ROOT=web
+    - PHP_INDEX_FILE=app_dev.php
+
+mysql:
+  container_name: symfony-oauth2-mysql
+  image: mysql/mysql-server:5.7
+  ports:
+    - 33064:3306
+  volumes:
+    - ./data:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+    MYSQL_USER: symfony
+    MYSQL_PASSWORD: 123
+    MYSQL_DATABASE: symfony-oauth2
+
+phpmyadmin:
+  container_name: symfony-oauth2-phpmyadmin
+  image: phpmyadmin/phpmyadmin
+  restart: always
+  ports:
+    - 8080:80
+  environment:
+    PMA_HOST: mysql
+    MYSQL_ROOT_PASSWORD: password
+  links:
+    - mysql
