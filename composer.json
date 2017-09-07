@@ -10,8 +10,18 @@
     "autoload-dev": {
         "psr-4": { "Tests\\": "tests/" }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/luchianenco/oauth2-amazon"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/luchianenco/oauth2-client-bundle"
+        }
+    ],
     "require": {
-        "php": ">=5.5.9",
+        "php": "^5.6 || ^7.0",
         "symfony/symfony": "3.3.*",
         "doctrine/orm": "^2.5",
         "doctrine/doctrine-bundle": "^1.6",
@@ -23,8 +33,9 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "knpuniversity/oauth2-client-bundle": "^1.9",
-        "league/oauth2-facebook": "^1.4"
+        "league/oauth2-facebook": "^1.4",
+        "luchianenco/oauth2-client-bundle": "dev-master",
+        "luchianenco/oauth2-amazon": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -64,5 +75,6 @@
         "branch-alias": {
             "dev-master": "3.2-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
