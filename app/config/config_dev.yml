@@ -32,3 +32,7 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+csa_guzzle:
+    profiler: '%kernel.debug%'
+    logger: true

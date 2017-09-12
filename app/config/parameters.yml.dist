@@ -20,3 +20,6 @@ parameters:
 
     facebook_app_id: ~
     facebook_app_secret: ~
+
+    amazon_app_id: ~
+    amazon_app_secret: ~

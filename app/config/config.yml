@@ -23,7 +23,6 @@ framework:
         engines: ['twig']
     default_locale:  "%locale%"
     trusted_hosts:   ~
-    trusted_proxies: ~
     session:
         # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
         handler_id:  session.handler.native_file
@@ -80,3 +79,9 @@ knpu_oauth2_client:
             redirect_route: connect_facebook_check
             redirect_params: {}
             graph_api_version: v2.8
+        amazon_main:
+            type: amazon
+            client_id: "%amazon_app_id%"
+            client_secret: "%amazon_app_secret%"
+            redirect_route: connect_amazon_check
+            redirect_params: {}

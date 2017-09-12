@@ -9,31 +9,30 @@ use Symfony\Component\HttpFoundation\Request;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 
 /**
- * Class FacebookController
  * @package AppBundle\Controller
  */
-class FacebookController extends Controller
+class AmazonController extends Controller
 {
     /**
      * Link to this controller to start the "connect" process
      *
-     * @Route("/connect/facebook", name="connect_facebook")
+     * @Route("/connect/amazon", name="connect_amazon")
      */
     public function connectAction()
     {
         $redirect =  $this->get('oauth2.registry')
-            ->getClient('facebook_main')
+            ->getClient('amazon_main')
             ->redirect();
 
         return $redirect;
     }
 
     /**
-     * @Route("/connect/facebook/check", name="connect_facebook_check")
+     * @Route("/connect/amazon/check", name="connect_amazon_check")
      */
     public function connectCheckAction(Request $request)
     {
-        $client = $this->get('oauth2.registry')->getClient('facebook_main');
+        $client = $this->get('oauth2.registry')->getClient('amazon_main');
 
         try {
             // the exact class depends on which provider you're using
