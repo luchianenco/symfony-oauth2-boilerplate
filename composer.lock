@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a15dea30dc683a27dbfe4d72496261e",
+    "content-hash": "b8d4503ea03406a52f50c2f94b801649",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1316,16 +1316,16 @@
         },
         {
             "name": "knpuniversity/oauth2-client-bundle",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/knpuniversity/oauth2-client-bundle.git",
-                "reference": "22963a96f354c8d2160939581c1c4d3060b7a3a4"
+                "reference": "77e50c055280644bde571f8728c750b6d85a4a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/knpuniversity/oauth2-client-bundle/zipball/22963a96f354c8d2160939581c1c4d3060b7a3a4",
-                "reference": "22963a96f354c8d2160939581c1c4d3060b7a3a4",
+                "url": "https://api.github.com/repos/knpuniversity/oauth2-client-bundle/zipball/77e50c055280644bde571f8728c750b6d85a4a15",
+                "reference": "77e50c055280644bde571f8728c750b6d85a4a15",
                 "shasum": ""
             },
             "require": {
@@ -1366,7 +1366,7 @@
                 "oauth",
                 "oauth2"
             ],
-            "time": "2017-06-12T19:55:35+00:00"
+            "time": "2017-09-11T20:06:32+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -1488,16 +1488,16 @@
         },
         {
             "name": "luchianenco/oauth2-amazon",
-            "version": "1.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luchianenco/oauth2-amazon.git",
-                "reference": "846ffe376c3b450c24e41e1fa8d147e3a9b7ad2f"
+                "reference": "b2feeed135e10fe4158a0bcc3542af0dc8ea7d48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luchianenco/oauth2-amazon/zipball/846ffe376c3b450c24e41e1fa8d147e3a9b7ad2f",
-                "reference": "846ffe376c3b450c24e41e1fa8d147e3a9b7ad2f",
+                "url": "https://api.github.com/repos/luchianenco/oauth2-amazon/zipball/b2feeed135e10fe4158a0bcc3542af0dc8ea7d48",
+                "reference": "b2feeed135e10fe4158a0bcc3542af0dc8ea7d48",
                 "shasum": ""
             },
             "require": {
@@ -1538,10 +1538,10 @@
                 "oauth2"
             ],
             "support": {
-                "source": "https://github.com/luchianenco/oauth2-amazon/tree/1.0",
+                "source": "https://github.com/luchianenco/oauth2-amazon/tree/1.0.2",
                 "issues": "https://github.com/luchianenco/oauth2-amazon/issues"
             },
-            "time": "2017-09-08T08:23:43+00:00"
+            "time": "2017-09-12T14:40:16+00:00"
         },
         {
             "name": "monolog/monolog",

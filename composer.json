@@ -33,7 +33,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "knpuniversity/oauth2-client-bundle": "^1.10",
+        "knpuniversity/oauth2-client-bundle": "^1.11",
         "league/oauth2-facebook": "^2.0",
         "luchianenco/oauth2-amazon": "^1.0",
         "csa/guzzle-bundle": "^2.0"
